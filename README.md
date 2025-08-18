@@ -122,6 +122,7 @@ ret
 ```
 ## Output  
 <img width="1920" height="1080" alt="Screenshot 2025-08-18 142553" src="https://github.com/user-attachments/assets/0342f681-afd5-42fa-ae3d-8108424e2d7d" />
+
 ## AND
 ```
 org 100h
