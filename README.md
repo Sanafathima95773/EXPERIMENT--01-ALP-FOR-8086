@@ -81,92 +81,96 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Addition  of 8 bit ALP 
 ```
-org 100h
-mov ax,7db3h
-mov bx,5adbh
-add ax,bx
-ret
+START:
+MOV AL,04
+MOV BL,03
+ADD AL,BL
+HLT
 ```
 ## Output 
-<img width="1920" height="1080" alt="Screenshot 2025-08-18 140028" src="https://github.com/user-attachments/assets/7b4a4027-5c54-4514-ace1-d58de1f378e6" />
- 
- 
+
+ <img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/effdcee0-0b48-430a-b369-7af30c801b37" />
+
 ## Subtraction   of 8 bit numbers  ALP 
  ```
-org 100h
-mov ax,7db3h
-mov bx,5adbh
-sub ax,bx
-ret
+START:
+MOV AL,04
+MOV BL,03
+SUB AL,BL
+HLT
 ```
 ## Output  
-<img width="1920" height="1080" alt="Screenshot 2025-08-18 140028" src="https://github.com/user-attachments/assets/8a45f02a-dfe4-429b-bdb5-75315c8f1157" />
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/3c439a99-0579-4f91-a443-42e072ddeba5" />
 
 ## Multiplication alp 
 ```
 org 100h
-mov ax,93b4h
-mov bx,5adbh
-mul bx
-ret
+START:
+MOV AL,03
+MOV BL,03
+MUL BL
+HLT
 ```
  ## Output  
 
-<img width="1920" height="1080" alt="Screenshot 2025-08-18 142749" src="https://github.com/user-attachments/assets/e73fc20d-415f-44c1-94bd-9a3cdc93494e" />
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/8eae66fb-6e08-4507-a54d-0995df057c2f" />
+
 
 ## Division alp 
 ```
-org 100h
-mov ax,71b4h
-mov bx,43ebh
-div ax
-ret
+START:
+MOV AL,06
+MOV BL,03
+DIV BL
+HLT
 ```
 ## Output  
-<img width="1920" height="1080" alt="Screenshot 2025-08-18 142553" src="https://github.com/user-attachments/assets/0342f681-afd5-42fa-ae3d-8108424e2d7d" />
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/51c66ccd-1326-4427-947c-a38f1b586a8a" />
 
 ## AND
 ```
-org 100h
-mov bx,1000h;
-and bx,1111h;
-mov [0040h+02],bx;
-hlt
+START:
+MOV AL,50H
+MOV BL,25H
+AND AL,BL
+HLT
 ```
 ## Output:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4c815258-bcfb-4bd7-8767-b2774c3a9e78" />
-
+ <img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/1ed77a90-1fac-48d4-a4ac-a84c85b41ed0" />
 ## OR
 ```
-MOV SI,0532H;
-MOV AX,0A32H;
-MOV BX,0B13H;
-OR AX,BX;
+START:
+MOV AL,50H
+MOV BL,25H
+OR AL,BL
+HLT
 ```
 ## Output:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/213d25b6-db1f-4e73-8f88-8518bd7531bf" />
+
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/3da857b2-66e1-4cae-8d5d-46d27c38acc4" />
 
 ## NOT
 ```
-org 100h
-mov bx,0040h;
-mov ax,[bx]; 
-not al;
-mov [0040h+04],ax;
-hlt
+START:
+MOV AL,18H
+NOT AL
+HLT
+
 ```
 ## Output:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e84e7b40-05d6-4205-bdae-7b04b5ecd51b" />
+<img width="1036" height="576" alt="image" src="https://github.com/user-attachments/assets/bc3adda9-8a0b-4c8e-a65e-49e27c5a312d" />
 
 ## XOR
 ```
-MOV [SI+2],AX;
-MOV AX,0A32H;
-MOV BX,0B13H;
-XOR AX,BX;
+START:
+MOV AL,18H
+MOV BL,46H
+XOR AL,BL
+HLT
 ```
 ## Output:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e493315f-dca4-4dec-bcaa-298b62a53ebd" />
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/1ae3ded8-db98-4305-8883-9fecf411c6e2" />
+
 
 
 ## Result :
