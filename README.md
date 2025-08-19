@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
 ```
 Name : Sana Fathima H
-Roll no :212223240145
+Register no :212223240145
 Date of experiment :19-08-2025
 ```
 
