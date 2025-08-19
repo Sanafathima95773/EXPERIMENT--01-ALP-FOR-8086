@@ -137,6 +137,7 @@ HLT
 ```
 ## Output:
  <img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/1ed77a90-1fac-48d4-a4ac-a84c85b41ed0" />
+ 
 ## OR
 ```
 START:
